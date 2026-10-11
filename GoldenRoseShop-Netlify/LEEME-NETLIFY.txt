@@ -1,0 +1,23 @@
+GOLDEN ROSE SHOP — PUBLICAR EN NETLIFY
+
+Esta carpeta ya incluye la tienda, el panel privado y el guardado persistente de productos y fotos. Para que el panel funcione, hay que desplegarlo como proyecto con funciones; subir solo index.html como página estática no activa el panel.
+
+PUBLICACIÓN
+1. Extrae el ZIP completo en una carpeta.
+2. Sube los archivos a un repositorio privado de GitHub (puedes usar el ZIP preparado).
+3. En Netlify, inicia sesión y elige “Add new site” > “Import an existing project” > GitHub. Autoriza el repositorio de Golden Rose Shop.
+4. Deja el directorio de publicación como “.”. Netlify leerá netlify.toml y compilará la función del panel.
+5. Antes de publicar, en Site configuration > Environment variables, añade estos tres valores:
+   ADMIN_USER = victor
+   ADMIN_PASSWORD = tu propia contraseña segura de al menos 12 caracteres
+   SESSION_SECRET = una cadena secreta aleatoria de al menos 32 caracteres
+   No compartas ni publiques ADMIN_PASSWORD ni SESSION_SECRET. No uses 1234 en una tienda accesible por Internet.
+6. Pulsa “Deploy”. El enlace permanente aparecerá en Netlify cuando termine la publicación. Puedes cambiar el subdominio en Site configuration > Domain management.
+
+PANEL DE ADMINISTRACIÓN
+Abre TU-ENLACE/admin.html e inicia sesión con el usuario y la contraseña configurados. Desde ahí puedes agregar, editar y borrar productos y cambiar la contraseña. Las fotos y los productos se guardan en Netlify Blobs y sobreviven nuevas publicaciones.
+
+NOTAS
+- El carrito prepara el pedido y lo envía al WhatsApp +1 809 846 2326.
+- El primer acceso crea la cuenta privada de administración. Si no aparecen productos o fotos después de publicar, comprueba que la función terminó de desplegarse y que Netlify Blobs está disponible en el sitio.
+- El dominio público no se puede crear hasta que el proyecto se conecte y despliegue en una cuenta de Netlify.

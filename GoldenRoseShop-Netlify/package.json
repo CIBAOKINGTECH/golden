@@ -1,0 +1,8 @@
+{
+  "name": "golden-rose-shop",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0"
+  }
+}
